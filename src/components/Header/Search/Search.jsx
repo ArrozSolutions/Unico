@@ -10,7 +10,7 @@ import baseUrl from "../../../utils/baseUrl";
 
 const Search = ({setShowSearch}) => {
     const Navigate = useNavigate();
-    const [query , setQuery] = useState();
+    const [query ] = useState();
 
     const [users, setUsers] = useState([]);
     const [pro , setPro] = useState({});
