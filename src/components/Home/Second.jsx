@@ -1,6 +1,5 @@
 import React from 'react'
 import Category from './Category/Category'
-import Products2 from '../Products/Products2'
 import Newsletter from '../Footer/Newsletter/Newsletter'
 import "./Second.scss"
 
