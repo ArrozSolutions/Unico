@@ -18,7 +18,11 @@ const AppContext = ({children}) =>{
 
     useEffect(() => {
         let count = 0;
-        cartItems?.map((item) => (count += item.attributes.quantity));
+        if(cartItems){
+            cartItems.map((item) => (
+                count += item.attributes.quantity
+            ));
+        }
         setCartCount(count);
 
         let subTotal = 0;
