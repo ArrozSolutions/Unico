@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import "./Account.css"
 import Header from '../Header/Header'
@@ -13,7 +13,6 @@ const Account = () => {
   const data  = {
     userId : JSON.parse(localStorage.user).userId
   }
-  const [order ,setOrder] = useState('');
 
   try {
     axios.post(`${baseUrl}/api/v1/customer/readCustomerById` , {data : data}).then((res)=>{
@@ -28,7 +27,6 @@ const Account = () => {
 
   const clickHandeler = ()=>{
     // localStorage.removeItem("user");
-    var arr = JSON.parse(localStorage.user)
     // console.log(arr) ;
     // arr.slice(0) ;
     // localStorage.setItem("user" , arr ) ;
@@ -79,7 +77,6 @@ const Account = () => {
             <div className="text1">
               <h3>Order Details </h3>
               {/* {order}  */}
-              <h3></h3>
             </div>
           </div>
           <div className="ctas">

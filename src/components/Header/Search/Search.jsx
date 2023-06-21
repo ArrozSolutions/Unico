@@ -1,7 +1,6 @@
 import React from "react";
 import { useState , useEffect} from "react";
 import { MdClose } from "react-icons/md";
-import prod from "../../../assets/products/earbuds-prod-1.webp"
 import axios from "axios"
 
 

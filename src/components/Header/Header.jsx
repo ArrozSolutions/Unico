@@ -1,12 +1,11 @@
 import React from "react";
-import { useEffect, useState, useContext } from "react";
-import { Link ,Navigate, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link  } from "react-router-dom";
 import {BiSearchAlt2} from "react-icons/bi";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineUser } from "react-icons/ai";
 import "./Header.scss";
 import Search from "./Search/Search";
-import { Context } from "../../utils/Context";
 import Cart from "../Cart/Cart";
 import WebFont from 'webfontloader';
 // import { AiOutlineDown } from "@react-icons/all-files";
@@ -17,12 +16,11 @@ import "./Header.scss";
 
 
 const Header = () => {
-    const Navigate = useNavigate() ;
     var q = JSON.parse(localStorage.Cart).length ;
     const[scrolled,setScrolled] = useState(false);
     const [showCart, setShowCart] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
-    const [log , setLog] = useState(false) ;
+    const [ setLog] = useState(false) ;
     // let log = 'login' ;
     const getuser = ()=>{
 
@@ -49,14 +47,11 @@ const Header = () => {
         }
     }
 
-    function fun(){
-        Navigate('/login') ;
-    }
 
     useEffect(()=>{
         getuser();
         window.addEventListener("scroll", handleScroll)
-    },[]);
+    },);
     useEffect(() => {
    WebFont.load({
      google: {

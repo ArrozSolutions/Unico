@@ -2,7 +2,7 @@ import React from "react";
 import "./Signup.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import {  useEffect, useRef } from "react";
 import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -34,7 +34,7 @@ const Login = () => {
 
   useEffect(() => {
     allusers();
-  }, []);
+  }, );
 
   const clickHandler = async (event) => {
     event.preventDefault();

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./UserTable.css";
-import Table from "./Table";
 // const API = "https://jsonplaceholder.typicode.com/users";
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";

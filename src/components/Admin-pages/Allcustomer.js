@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./UserTable.css";
-import Table from "./Table";
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";
 

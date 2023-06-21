@@ -1,7 +1,6 @@
 import React from "react";
 import "./Admin.css";
-import { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import { useState } from "react";
 import { NavLink, useNavigate, Link } from "react-router-dom";
 import { Dashboard } from "./Dashboard";
 import unico from "../../assets/Unico.jpeg";
@@ -17,10 +16,6 @@ import Alluser from "./Alluser";
 import UpdatePro from "./UpdatePro";
 
 const Admin = () => {
-  const [jobNo, setjobNo] = useState("");
-  const [userNo, setuserNo] = useState("");
-  const [employeeNo, setemployeeNo] = useState("");
-  const [applicantNo, setapplicantNo] = useState("");
   const [page, setPage] = useState("");
 
   const Navigate = useNavigate();
@@ -122,7 +117,7 @@ const Admin = () => {
               </button>
             </div>
             <div class="user">
-              <a class="btn" onClick={clickHandler}>
+              <a href="/" class="btn" onClick={clickHandler}>
                 Logout
               </a>
             </div>

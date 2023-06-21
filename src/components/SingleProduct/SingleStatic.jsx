@@ -1,15 +1,12 @@
 import React from "react";
-import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import {
     FaFacebookF,
     FaTwitter,
     FaInstagram,
     FaLinkedinIn,
     FaPinterest,
-    FaCartPlus,
 } from "react-icons/fa";
 import "./SingleProduct.scss";
-import prod from "../../assets/products/earbuds-prod-1.webp"
 import { Link } from "react-router-dom";
 
 const SingleProduct = () => {

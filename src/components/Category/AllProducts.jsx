@@ -1,7 +1,6 @@
 import React from "react";
 import "./Category.scss";
 import Products from "../Products/Products"
-import SingleProduct from "../SingleProduct/SingleProduct";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SingleStatic from "../SingleProduct/SingleStatic";

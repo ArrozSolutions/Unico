@@ -1,4 +1,4 @@
-import React,{ createContext, useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import { useLocation } from "react-router-dom";
 
 export const Context = createContext();
@@ -18,11 +18,7 @@ const AppContext = ({children}) =>{
 
     useEffect(() => {
         let count = 0;
-        if(cartItems){
-            cartItems.map((item) => (
-                count += item.attributes.quantity
-            ));
-        }
+        cartItems?.map((item) => (count += item.attributes.quantity));
         setCartCount(count);
 
         let subTotal = 0;

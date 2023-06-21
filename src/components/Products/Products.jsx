@@ -1,11 +1,9 @@
 import "./Products.scss";
-import Product from "./Product/Product";
 import axios from "axios"
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 // import "./Product.scss";
 // import prod from "../../../assets/products/earbuds-prod-1.webp";
-import { FaCartPlus } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Cart from "../Cart/Cart";
 import baseUrl from "../../utils/baseUrl";
 
@@ -13,7 +11,6 @@ import baseUrl from "../../utils/baseUrl";
 const Products = ({headingText , productCategory}) => {
     const [users, setUsers] = useState([]);
     const Navigate = useNavigate();
-    const [cart , setCart] = useState(JSON.parse(localStorage.Cart)) ;
     const [showCart, setShowCart] = useState(false);
     
     const allEmploye = async () => {

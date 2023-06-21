@@ -1,13 +1,12 @@
 import React from "react";
 import "./Admin.css";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";
 export const Dashboard = () => {
   const [productNo, setproductNo] = useState("");
   const [userNo, setuserNo] = useState("");
   const [customerNo, setcustomerNo] = useState("");
-  const [page, setPage] = useState("");
 
   const ALluser = async () => {
     // console.log("hn hn chal rha hai ");
@@ -44,13 +43,7 @@ export const Dashboard = () => {
       });
   };
 
-  const clickHander = (event) => {
-    console.log(event);
-
-    setPage(event);
-
-    console.log(page);
-  };
+ 
 
   useEffect(() => {
     ALluser();

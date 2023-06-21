@@ -1,13 +1,11 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {  useRef } from "react";
 import "./UserTable.css";
-import Table from "./Table";
 import "./AddJob.css";
 
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";
 
 const UpdatePro = () => {
-  const [users, setUsers] = useState([]);
 
   const productId = useRef("");
   const productStock = useRef("");

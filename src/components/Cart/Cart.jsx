@@ -1,12 +1,11 @@
 import React from "react";
 
 import { MdClose } from "react-icons/md";
-import { BsCartX } from "react-icons/bs";
 import CartItem from "./CartItem/CartItem"
 
 import "./Cart.scss";
-import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const Cart = ({setShowCart}) => {
     var cart = JSON.parse(localStorage.Cart) ;
     // console.log("cart in = " ,cart) ;
@@ -37,7 +36,7 @@ const Cart = ({setShowCart}) => {
     useEffect(()=>{
         // console.log("or ye hai return valu = " ,getQuantity());
         getQuantity() ;
-    },[])
+    },)
 
 
 

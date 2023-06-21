@@ -6,10 +6,9 @@ import {
     FaLinkedinIn,
     FaWhatsapp
 } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Newsletter.scss";
 const Newsletter = () => {
-    const Navigate = useNavigate();
     return (
         <div className="newsletter-section">
             <div className="newsletter-content">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import {  useRef } from "react";
 import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";

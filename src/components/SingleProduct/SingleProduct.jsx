@@ -10,7 +10,6 @@ import {
   FaCartPlus,
 } from "react-icons/fa";
 import "./SingleProduct.scss";
-import prod from "../../assets/products/earbuds-prod-1.webp";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 

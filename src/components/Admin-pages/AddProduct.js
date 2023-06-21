@@ -1,11 +1,9 @@
-import { React, useState, useEffect, useRef } from "react";
+import { React, useEffect, useRef } from "react";
 import "./AddJob.css";
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";
 
 const AddJob = () => {
-  const productId = useRef("");
-  const productCategory = useRef("");
   const productName = useRef("");
   const price = useRef("");
   const productWeight = useRef("");
@@ -40,7 +38,7 @@ const AddJob = () => {
 
   useEffect(() => {
     Allpro();
-  }, []);
+  },);
 
   const clickHandler = async (e) => {
     // e.preventdefalut();

@@ -10,7 +10,6 @@ import AboutUS from "../AboutUS/AboutUs";
 import ChooseUs from "../ChooseUS/ChooseUs"
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { FaOtter } from "react-icons/fa";
 const Home = () => {
     return (
     <div><Header/>

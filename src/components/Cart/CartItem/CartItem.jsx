@@ -1,7 +1,6 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import {MdClose} from "react-icons/md"
-import prod from "../../../assets/products/earbuds-prod-1.webp"
 import "./CartItem.scss";
 
 const CartItem = ({name , price ,stock ,id}) => {
@@ -27,7 +26,7 @@ const CartItem = ({name , price ,stock ,id}) => {
     useEffect(()=>{
         // console.log("or ye hai return valu = " ,getQuantity());
         getQuantity() ;
-    },[])
+    },)
 
     const removeq = (ID)=>{
         const ar = JSON.parse(localStorage.quantity)

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./UserTable.css";
 import axios from "axios";
 import baseUrl from "../../utils/baseUrl";
 
 const Table = ({ users }) => {
-  const [Id, setId] = useState();
 
   const clickHander = async (_id) => {
     console.log(_id);

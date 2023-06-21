@@ -37,7 +37,7 @@ const ContactUs = () => {
             <h2><u>Get In Touch</u></h2>
             <p>
               Hey👋🏻 shoot a message and we are all in to hear. <br />
-              Connect with us on <a className="a-links" href="https://api.whatsapp.com/send?phone=919669559988&text=Hello" target="_blank">Whatsapp</a> or DM on <a className="a-links" target="_blank" href="https://www.linkedin.com/company/unico-foods/?viewAsMember=true">LinkedIN</a> too.
+              Connect with us on <a className="a-links" href="https://api.whatsapp.com/send?phone=919669559988&text=Hello" rel="noreferrer" target="_blank">Whatsapp</a> or DM on <a className="a-links" rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/unico-foods/?viewAsMember=true">LinkedIN</a> too.
             </p>
           </div>
           <form ref={form} onSubmit={sendEmail}>
