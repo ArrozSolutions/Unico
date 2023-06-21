@@ -1,3 +1,4 @@
+import React from "react";
 import "./Category2.scss";
 // import choose1 from "../../../assets/category/choose-1.png"
 

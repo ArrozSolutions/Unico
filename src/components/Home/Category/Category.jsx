@@ -1,3 +1,4 @@
+import React from "react";
 import "./Category.scss";
 import cat5 from "../../../assets/category/cat-5.png"
 import catA from "../../../assets/category/cat-all.png"

@@ -1,3 +1,4 @@
+import React from "react";
 import "./Category.scss";
 import Products from "../Products/Products"
 import SingleProduct from "../SingleProduct/SingleProduct";

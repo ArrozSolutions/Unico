@@ -1,3 +1,4 @@
+import React from "react";
 import "./Home.scss";
 import "./Banner/Banner"
 import Banner from "./Banner/Banner";

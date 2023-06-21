@@ -1,3 +1,4 @@
+import React from "react";
 import "./Products3.scss";
 import Product2 from "./Product/Product2";
 import { useNavigate } from "react-router-dom";

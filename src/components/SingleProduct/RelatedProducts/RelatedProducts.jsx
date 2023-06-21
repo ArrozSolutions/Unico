@@ -1,3 +1,4 @@
+import React from "react";
 import Products3 from "../../Products/Products3";
 
 const RelatedProducts = () => {

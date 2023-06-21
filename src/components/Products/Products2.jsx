@@ -1,3 +1,4 @@
+import React from "react";
 import "./Products.scss";
 import Product from "./Product/Product";
 const Products2 = () => {

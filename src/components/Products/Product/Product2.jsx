@@ -1,3 +1,4 @@
+import React from "react";
 import "./Product2.scss";
 import prod from "../../../assets/products/earbuds-prod-1.webp";
 import { FaCartPlus } from "react-icons/fa";
