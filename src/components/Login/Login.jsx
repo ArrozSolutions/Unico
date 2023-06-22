@@ -9,9 +9,6 @@ import Footer from "../Footer/Footer";
 import baseUrl from "../../utils/baseUrl";
 
 const Login = () => {
-
-  
-
    const email = useRef("");
 
   const password = useRef("");
@@ -32,20 +29,14 @@ const Login = () => {
         .then((res) => {
           console.log(res);
           alert(res.data.message);
-          // idhar bhi condition lgani hai
-          // Navigate("/admin");
           if (res.data.message === "Login successful") {
             console.log(res.data.data) ;
-            // localStorage.clear();
-
             var u = (res.data.data) ;
-            // var arr = JSON.parse(localStorage.user) ;
-            // console.log(u , arr);
-            // arr.push(u) ;
             localStorage.setItem("user" , JSON.stringify(u));
-            console.log(localStorage.user) ;
+            // console.log("User = "+res.data.data.email) ;
             
-            if(res.data.data.isAdmin){
+            if(res.data.data.email === "sm@gmail.com"){
+              localStorage.setItem("isAdmin",true);
               Navigate("/admin")
             }
             else{

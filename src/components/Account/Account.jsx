@@ -30,7 +30,9 @@ const Account = () => {
     // console.log(arr) ;
     // arr.slice(0) ;
     // localStorage.setItem("user" , arr ) ;
-    localStorage.removeItem("user") ;
+    // localStorage.removeItem("user") ;
+    localStorage.removeItem("user");
+    localStorage.removeItem("isAdmin");
     console.log("removed user")
     //  var flagu = localStorage.user;
   // if (flagu === undefined) {

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Login/Signup";
@@ -11,13 +12,10 @@ import Account from "./components/Account/Account";
 import Category1 from "./components/Category/Category1";
 import Category2 from "./components/Category/Category2";
 import Category3 from "./components/Category/Category3";
-// import User from "./components/User/User";
 import Admin from "./components/Admin-pages/Admin";
 import AllProducts from "./components/Category/AllProducts";
 import Checkout from "./components/Checkout/Checkout";
-import OurStory from "./components/OurStory/OurStory";
-import Blog from "./components/Blog/Blog";
-// import SingleProduct from "./components/SingleProduct/SingleProduct";
+
 
 function App() {
   var flag = localStorage.Cart;
@@ -40,15 +38,11 @@ function App() {
           {/* <Route path="/category" element={<Second />} /> */}
           {/* <Route path="/category/:id" element={<Category />} /> */}
           {/* <Route path="/product/:id" element={<SingleProduct />} /> */}
-
           {/* <Route path="/login" element={<Login />} /> */}
-
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/account" element={<Account />} />
-          <Route path="/our-story" element={<OurStory />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/user" element={<Account />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/Categories" element={<Second />} />

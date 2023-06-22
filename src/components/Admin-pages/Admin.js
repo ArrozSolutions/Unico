@@ -1,14 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Admin.css";
 import { useState } from "react";
 import { NavLink, useNavigate, Link } from "react-router-dom";
 import { Dashboard } from "./Dashboard";
 import unico from "../../assets/Unico.jpeg";
-// import Alljobs from "./Allcustomer";
-// import Allaplicant from "./UpdatePro";
-// import Alluser from "./Alluser";
-// import Allemp from "./Allproduct";
-// import Addjobs from "./AddProduct";
 import AddProduct from "./AddProduct";
 import Allcustomer from "./Allcustomer";
 import Allproduct from "./Allproduct";
@@ -17,7 +12,7 @@ import UpdatePro from "./UpdatePro";
 
 const Admin = () => {
   const [page, setPage] = useState("");
-
+  const [showPage,setShowPage] = useState(false);
   const Navigate = useNavigate();
 
   const clickHander = (event) => {
@@ -28,36 +23,26 @@ const Admin = () => {
     console.log(page);
   };
 
-  const clickHandler = () => {
-    // var arr = JSON.parse(localStorage.user);
-    // console.log(arr);
-    // arr.splice(1, 1);
-    // localStorage.setItem("user", arr);
-    localStorage.removeItem("user");
+  useEffect(()=>{
+    if(!localStorage.getItem("isAdmin")){
+      setShowPage(false);
+      Navigate('/');
+    }else{
+      setShowPage(true)
+    }
+  },[Navigate])
 
+  const clickHandler = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("isAdmin");
     Navigate("/");
   };
 
-  // useEffect(() => {
-  //   ALlEmployee();
-  //   ALljobs();
-  //   ALLusers();
-  //   ALlapplicant();
-  //   // setemployeeNo(employeeNo);
-  // }, []);
 
-  if (!localStorage.user) {
-    return (
-      <>
-        <li onClick={() => Navigate("/login")}>
-          &nbsp;<span>Please Login First</span>{" "}
-        </li>
-      </>
-    );
-  }
 
   return (
-    <div className="admin-body">
+<>{showPage &&
+<div className="admin-body">
       <div class="side-menu">
         <div class="brand-name">
           <Link to="/">
@@ -142,6 +127,7 @@ const Admin = () => {
         </div>
       </div>
     </div>
+}</>
   );
 };
 

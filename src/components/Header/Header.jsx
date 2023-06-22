@@ -90,7 +90,7 @@ const Header = () => {
             
                         <li><Link className="link" to="/">Home</Link></li>
                         <div>
-                        {(localStorage.user)?<li><Link className="link" to="/admin">Admin</Link></li>:<span></span>}
+                        {(localStorage.removeItem("isAdmin"))?<li><Link className="link" to="/admin">Admin</Link></li>:<span></span>}
                         </div>
             
                        <div class="dropdown">
@@ -105,13 +105,11 @@ const Header = () => {
                                 <li><Link className="linkd" to="/Millet-Meusli">Millet-Meusli</Link></li>
                                 <li><Link className="linkd" to="/Millet-Laddo">Millet-Laddo</Link></li>
                                 <li><Link className="linkd" to="/Millet-Bar">Millet-Bar</Link></li>
-                                <li><Link className="linkd" to="/blog">Blog</Link></li>
 
                             </div>
                         </div>
                         <li><Link className="link" to="/contact">Contact us</Link></li>
                         <div>
-                        <li><Link className="link" to="/our-story">Our Story</Link></li>
                         </div>
                     </oll>
                     
