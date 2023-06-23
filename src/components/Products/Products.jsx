@@ -1,4 +1,6 @@
 import "./Products.scss";
+import "./Product/Product.scss";
+
 import axios from "axios"
 import React, {  useState } from "react";
 // import "./Product.scss";
