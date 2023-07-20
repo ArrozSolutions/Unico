@@ -1,5 +1,6 @@
 import React from "react";
 import "./Product2.scss";
+import {AiOutlineArrowRight} from "react-icons/ai"
 
 import { Link } from "react-router-dom";
 
@@ -20,7 +21,7 @@ const Product = ({li, nameText, strikePrice, normalPrice}) => {
           <div className="cart-buttons">
             <button className="add-to-cart-button">
               {/* <FaCartPlus size={20} /> */}
-              Add to Cart
+              View Category <AiOutlineArrowRight/>
             </button>
           </div>
         </div>
